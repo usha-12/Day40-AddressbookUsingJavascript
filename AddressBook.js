@@ -180,3 +180,8 @@ console.log(contacts);
 let personFromState = addressBookArray.filter(person => person.state == "Telangana");
 console.log("Contacts from State 'Telangana' are : ");
 console.log(personFromState);
+
+//Uc10-Count by City and State
+console.log("No.of Persons from city = 'Bbbbb' and state = 'Telangana' : ");
+let countByCity = addressBookArray.filter(person => person.city =="Bbbbb" && person.state == "Telangana").reduce((count, person) => count + 1, 0);
+console.log(countByCity);
