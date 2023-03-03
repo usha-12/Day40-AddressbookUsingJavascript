@@ -169,3 +169,15 @@ else{
     console.log("Duplicate Entry");
 }
 console.log(addressBookArray);
+//Uc8-Search Person in particular State
+let person5 = new AddressBook("Chitti", "Kalav", "Defds", "Bbbbb", "Telangana", "654773", "76 7866748967", "chitti20@gmail.com");
+addressBookArray[3] = person5;
+console.log(addressBookArray);
+
+let contacts = addressBookArray.filter(person => person.city == "Bbbbb");
+console.log("Contacts from city 'Bbbbb' are : ")
+console.log(contacts);
+
+let personFromState = addressBookArray.filter(person => person.state == "Telangana");
+console.log("Contacts from State 'Telangana' are : ");
+console.log(personFromState);
